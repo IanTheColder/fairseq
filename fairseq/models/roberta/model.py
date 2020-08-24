@@ -355,7 +355,7 @@ def roberta_mid_architecture(args):
     args.encoder_layers = getattr(args, 'encoder_layers', 6)
     base_architecture(args)
 
-@register_model_architecture('roberta', 'roberta_mid_small')
+@register_model_architecture('roberta', 'roberta_med_small')
 def roberta_mid_small_architecture(args):
     args.encoder_layers = getattr(args, 'encoder_layers', 6)
     args.encoder_attention_heads = getattr(args, 'encoder_attention_heads', 8)
